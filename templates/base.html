@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <!DOCTYPE html>
@@ -14,26 +14,27 @@
   <meta name="keywords" content="编程,Python,docker,k8s,kubernetes,devops,Django,HTML,CSS,JavaScript,Redis,Linux,个人网站">
   <title>记录python,django,微服务个人心得</title>
 
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/site.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/reset.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/site.css' %}">
 
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/container.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/grid.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/header.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/image.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/menu.css' %}">
 
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../static/dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/divider.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/list.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/segment.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/dropdown.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/icon.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/components/transition.css' %}">
 
-  <script src="../static/assets/library/jquery.min.js"></script>
-  <script src="../static/dist/components/transition.js"></script>
-  <script src="../static/dist/components/dropdown.js"></script>
-  <script src="../static/dist/components/visibility.js"></script>
+  <script src="{% static  'assets/library/jquery.min.js' %}"></script>
+  <script src="{% static 'dist/components/transition.js' %}"></script>
+  <script src="{% static 'dist/components/dropdown.js' %}"></script>
+  <script src="{% static 'dist/components/visibility.js' %}"></script>
+
   <script>
   $(document)
     .ready(function() {
